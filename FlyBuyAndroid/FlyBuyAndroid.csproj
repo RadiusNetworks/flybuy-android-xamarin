@@ -19,7 +19,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android.v28</PackageId>
-    <PackageVersion>1.1.6.2</PackageVersion>
+    <PackageVersion>1.1.7</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
     <Description>FlyBuy Pickup SDK for Xamarin/Android built for Android 9.0.</Description>
     <Copyright>Copyright (c) 2020 by Radius Networks</Copyright>
