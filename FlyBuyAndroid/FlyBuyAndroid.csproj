@@ -18,8 +18,13 @@
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
+<<<<<<< HEAD
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
     <PackageVersion>1.1.10</PackageVersion>
+=======
+    <PackageId>Radiusnetworks.Flybuy.Android.v28</PackageId>
+    <PackageVersion>1.1.7</PackageVersion>
+>>>>>>> 5b51ba0dc5cefb01850d5dde143150fb259ed8cc
     <Authors>Radius Networks, Inc</Authors>
     <Description>FlyBuy Pickup SDK for Xamarin/Android built for AndroidX</Description>
     <Copyright>Copyright (c) 2020 by Radius Networks</Copyright>

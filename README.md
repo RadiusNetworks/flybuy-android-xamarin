@@ -1,7 +1,6 @@
 # FlyBuy SDK for Xamarin.Android
-Last updated 26-May-2020
 
-Nuget
+### Nuget
 
 This is available on nuget.org here: https://www.nuget.org/packages/Radiusnetworks.Flybuy.Android/
 
