@@ -19,7 +19,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>1.1.11</PackageVersion>
+    <PackageVersion>1.1.12</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
     <Description>FlyBuy Pickup SDK for Xamarin/Android built for AndroidX</Description>
     <Copyright>Copyright (c) 2020 by Radius Networks</Copyright>
@@ -28,8 +28,8 @@
     <PackageLicenseUrl>https://github.com/RadiusNetworks/flybuy-android/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Radius Networks, Inc</Owners>
     <PackageProjectUrl>https://www.radiusnetworks.com/flybuy</PackageProjectUrl>
-    <PackageReleaseNotes>* Add push token to orders on fetch that do not have one
-* Fetch orders for a push message if we don't already have the order</PackageReleaseNotes>
+    <PackageReleaseNotes>Bug Fix:
+ * Fix DB migration issue that was crashing on certain devices</PackageReleaseNotes>
     <Title>FlyBuy Pickup SDK</Title>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
