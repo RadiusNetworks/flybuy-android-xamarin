@@ -38,4 +38,9 @@ Global
 		{FE4D8D53-DC77-44D0-93D2-8AFDC54EB189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE4D8D53-DC77-44D0-93D2-8AFDC54EB189}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.VersionControlPolicy = $1
+		version = 0.2
+	EndGlobalSection
 EndGlobal

@@ -19,9 +19,9 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>1.4</PackageVersion>
+    <PackageVersion>2.1.3</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
-    <Description>FlyBuy Pickup SDK for Xamarin/Android built for AndroidX</Description>
+    <Description>FlyBuy Pickup SDK for Xamarin/Android</Description>
     <Copyright>Copyright (c) 2020 by Radius Networks</Copyright>
     <PackageIconUrl>https://www.radiusnetworks.com/wp-content/uploads/FlyBuyPickup_logo.svg</PackageIconUrl>
     <NeutralLanguage>en-US</NeutralLanguage>
@@ -40,6 +40,7 @@ Bug Fix:
  * Fix IllegalStateException crash when starting location service
  * Fix issue returning sites and error when creating regions for Notify</PackageReleaseNotes>
     <Title>FlyBuy Pickup SDK</Title>
+    <ReleaseVersion>0.2</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
