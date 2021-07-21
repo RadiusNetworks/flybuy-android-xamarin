@@ -5,41 +5,19 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FE4D8D53-DC77-44D0-93D2-8AFDC54EB189}</ProjectGuid>
+    <ProjectGuid>{B431CE48-17AB-43DE-9E0B-2BFE7CA1C41C}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FlyBuyAndroid</RootNamespace>
-    <AssemblyName>FlyBuyAndroid</AssemblyName>
+    <RootNamespace>FlyBuyPickup</RootNamespace>
+    <AssemblyName>FlyBuyPickup</AssemblyName>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
     <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <PackOnBuild>true</PackOnBuild>
-    <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>1.4</PackageVersion>
-    <Authors>Radius Networks, Inc</Authors>
-    <Description>FlyBuy Pickup SDK for Xamarin/Android built for AndroidX</Description>
-    <Copyright>Copyright (c) 2020 by Radius Networks</Copyright>
-    <PackageIconUrl>https://www.radiusnetworks.com/wp-content/uploads/FlyBuyPickup_logo.svg</PackageIconUrl>
-    <NeutralLanguage>en-US</NeutralLanguage>
-    <PackageLicenseUrl>https://github.com/RadiusNetworks/flybuy-android/blob/master/LICENSE</PackageLicenseUrl>
-    <Owners>Radius Networks, Inc</Owners>
-    <PackageProjectUrl>https://www.radiusnetworks.com/flybuy</PackageProjectUrl>
-    <PackageReleaseNotes>Enhancements:
- * Add OS version to API header
- * Notify Module for geotriggered notifications
- * Initial Presence Module release
- * Send SDK version for API requests (#335)
- * Localized string for pickup types
-
-Bug Fix:
- * Fixes and updates proguard settings
- * Fix IllegalStateException crash when starting location service
- * Fix issue returning sites and error when creating regions for Notify</PackageReleaseNotes>
-    <Title>FlyBuy Pickup SDK</Title>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,26 +54,13 @@ Bug Fix:
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FlyBuyAPI\FlyBuyAPI.csproj">
-      <Project>{793473AE-33D9-4A22-816E-773676A69799}</Project>
-      <Name>FlyBuyAPI</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FlyBuyCore\FlyBuyCore.csproj">
       <Project>{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}</Project>
       <Name>FlyBuyCore</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FlyBuyPickup\FlyBuyPickup.csproj">
-      <Project>{B431CE48-17AB-43DE-9E0B-2BFE7CA1C41C}</Project>
-      <Name>FlyBuyPickup</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FlyBuyNotify\FlyBuyNotify.csproj">
-      <Project>{5D2C6484-59DB-47D0-9182-5E2880E23407}</Project>
-      <Name>FlyBuyNotify</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FlyBuyPresence\FlyBuyPresence.csproj">
-      <Project>{76A0C43A-9058-4678-BD5F-62F9191EB283}</Project>
-      <Name>FlyBuyPresence</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\pickup-release.aar" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
