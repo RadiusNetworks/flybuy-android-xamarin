@@ -19,27 +19,18 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>1.4</PackageVersion>
+    <PackageVersion>2.1.4</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
     <Description>FlyBuy Pickup SDK for Xamarin/Android built for AndroidX</Description>
-    <Copyright>Copyright (c) 2020 by Radius Networks</Copyright>
+    <Copyright>Copyright (c) 2021 by Radius Networks</Copyright>
     <PackageIconUrl>https://www.radiusnetworks.com/wp-content/uploads/FlyBuyPickup_logo.svg</PackageIconUrl>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageLicenseUrl>https://github.com/RadiusNetworks/flybuy-android/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Radius Networks, Inc</Owners>
     <PackageProjectUrl>https://www.radiusnetworks.com/flybuy</PackageProjectUrl>
     <PackageReleaseNotes>Enhancements:
- * Add OS version to API header
- * Notify Module for geotriggered notifications
- * Initial Presence Module release
- * Send SDK version for API requests (#335)
- * Localized string for pickup types
-
-Bug Fix:
- * Fixes and updates proguard settings
- * Fix IllegalStateException crash when starting location service
- * Fix issue returning sites and error when creating regions for Notify</PackageReleaseNotes>
-    <Title>FlyBuy Pickup SDK</Title>
+ * Adds API caching and Etags support</PackageReleaseNotes>
+    <Title>FlyBuy 2.0 SDK</Title>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
