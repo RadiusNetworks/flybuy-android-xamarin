@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyAPI", "FlyBuyAPI\FlyBuyAPI.csproj", "{793473AE-33D9-4A22-816E-773676A69799}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuySDK", "FlyBuySDK\FlyBuySDK.csproj", "{A143933E-114F-4550-A0E8-167C47656561}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyAndroid", "FlyBuyAndroid\FlyBuyAndroid.csproj", "{FE4D8D53-DC77-44D0-93D2-8AFDC54EB189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyCore", "FlyBuyCore\FlyBuyCore.csproj", "{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyPickup", "FlyBuyPickup\FlyBuyPickup.csproj", "{B431CE48-17AB-43DE-9E0B-2BFE7CA1C41C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyPresence", "FlyBuyPresence\FlyBuyPresence.csproj", "{76A0C43A-9058-4678-BD5F-62F9191EB283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyNotify", "FlyBuyNotify\FlyBuyNotify.csproj", "{5D2C6484-59DB-47D0-9182-5E2880E23407}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +27,6 @@ Global
 		{793473AE-33D9-4A22-816E-773676A69799}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{793473AE-33D9-4A22-816E-773676A69799}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{793473AE-33D9-4A22-816E-773676A69799}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A143933E-114F-4550-A0E8-167C47656561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A143933E-114F-4550-A0E8-167C47656561}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A143933E-114F-4550-A0E8-167C47656561}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A143933E-114F-4550-A0E8-167C47656561}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B2C6588-132D-4F5C-A45D-1719CB7D53A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B2C6588-132D-4F5C-A45D-1719CB7D53A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B2C6588-132D-4F5C-A45D-1719CB7D53A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,5 +39,21 @@ Global
 		{FE4D8D53-DC77-44D0-93D2-8AFDC54EB189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE4D8D53-DC77-44D0-93D2-8AFDC54EB189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE4D8D53-DC77-44D0-93D2-8AFDC54EB189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B431CE48-17AB-43DE-9E0B-2BFE7CA1C41C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B431CE48-17AB-43DE-9E0B-2BFE7CA1C41C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B431CE48-17AB-43DE-9E0B-2BFE7CA1C41C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B431CE48-17AB-43DE-9E0B-2BFE7CA1C41C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A0C43A-9058-4678-BD5F-62F9191EB283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A0C43A-9058-4678-BD5F-62F9191EB283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A0C43A-9058-4678-BD5F-62F9191EB283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A0C43A-9058-4678-BD5F-62F9191EB283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D2C6484-59DB-47D0-9182-5E2880E23407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2C6484-59DB-47D0-9182-5E2880E23407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2C6484-59DB-47D0-9182-5E2880E23407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2C6484-59DB-47D0-9182-5E2880E23407}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

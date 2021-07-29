@@ -1,0 +1,19 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']" name="managedName">Flybuy</attr>
+
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.customer']" name="managedName">Flybuy.Data</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.order']" name="managedName">Flybuy.Data</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.site']" name="managedName">Flybuy.Data</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.beacons']" name="managedName">Flybuy.Data</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.error']" name="managedName">Flybuy.Data</attr>
+
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.common']" name="managedName">Flybuy.Data</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']" name="managedName">Flybuy.Data</attr> 
+</metadata>
