@@ -8,6 +8,4 @@
   -->
   <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.pickup']" name="managedName">FlyBuy.Pickup</attr>
   <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.pickup']/class[@name='PickupManager']/field[@name='Companion']" name="managedName">Manager</attr>
-
-  <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.pickup.service']/class[@name='A']" name="obfuscated">false</attr>
 </metadata>

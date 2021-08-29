@@ -28,7 +28,7 @@
     <PackageLicenseUrl>https://github.com/RadiusNetworks/flybuy-android/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Radius Networks, Inc</Owners>
     <PackageProjectUrl>https://www.radiusnetworks.com/flybuy</PackageProjectUrl>
-    <PackageReleaseNotes> * Map manager companion class to Manager</PackageReleaseNotes>
+    <PackageReleaseNotes>* Map module manager companion classes to Manager class</PackageReleaseNotes>
     <Title>FlyBuy 2.0 SDK</Title>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
