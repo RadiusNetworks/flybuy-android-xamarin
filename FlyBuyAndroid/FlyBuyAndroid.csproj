@@ -19,7 +19,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>2.1.4</PackageVersion>
+    <PackageVersion>2.1.4.1</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
     <Description>FlyBuy Pickup SDK for Xamarin/Android built for AndroidX</Description>
     <Copyright>Copyright (c) 2021 by Radius Networks</Copyright>
@@ -28,8 +28,7 @@
     <PackageLicenseUrl>https://github.com/RadiusNetworks/flybuy-android/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Radius Networks, Inc</Owners>
     <PackageProjectUrl>https://www.radiusnetworks.com/flybuy</PackageProjectUrl>
-    <PackageReleaseNotes>Enhancements:
- * Adds API caching and Etags support</PackageReleaseNotes>
+    <PackageReleaseNotes> * Map manager companion class to Manager</PackageReleaseNotes>
     <Title>FlyBuy 2.0 SDK</Title>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
