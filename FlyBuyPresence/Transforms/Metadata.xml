@@ -6,5 +6,5 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
-  <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.presence']" name="managedName">Flybuy.Presence</attr>
-</metadata>
+  <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.presence']" name="managedName">FlyBuy.Presence</attr>
+  <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.presence']/class[@name='PresenceManager']/field[@name='Companion']" name="managedName">Manager</attr></metadata>
