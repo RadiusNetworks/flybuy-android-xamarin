@@ -53,19 +53,16 @@
       <HintPath>..\packages\Xamarin.Jetbrains.Annotations.13.0.0.4\lib\monoandroid90\Xamarin.Jetbrains.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Kotlin.StdLib.Common">
-      <HintPath>..\packages\Xamarin.Kotlin.StdLib.Common.1.5.21\lib\monoandroid90\Xamarin.Kotlin.StdLib.Common.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Kotlin.StdLib.Common.1.5.30\lib\monoandroid90\Xamarin.Kotlin.StdLib.Common.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Kotlin.StdLib">
-      <HintPath>..\packages\Xamarin.Kotlin.StdLib.1.5.21\lib\monoandroid90\Xamarin.Kotlin.StdLib.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Kotlin.StdLib.1.5.30\lib\monoandroid90\Xamarin.Kotlin.StdLib.dll</HintPath>
     </Reference>
     <Reference Include="GoogleGson">
       <HintPath>..\packages\GoogleGson.2.8.6\lib\monoandroid90\GoogleGson.dll</HintPath>
     </Reference>
     <Reference Include="Square.Retrofit2.ConverterGson">
       <HintPath>..\packages\Square.Retrofit2.ConverterGson.2.9.0\lib\monoandroid90\Square.Retrofit2.ConverterGson.dll</HintPath>
-    </Reference>
-    <Reference Include="Timber">
-      <HintPath>..\packages\Xamarin.JakeWharton.Timber.4.7.1\lib\MonoAndroid10\Timber.dll</HintPath>
     </Reference>
     <Reference Include="Java.Interop" />
   </ItemGroup>
@@ -101,4 +98,6 @@
   </Target>
   -->
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
+  <Import Project="..\packages\Xamarin.Kotlin.StdLib.Common.1.5.30\build\monoandroid9.0\Xamarin.Kotlin.StdLib.Common.targets" Condition="Exists('..\packages\Xamarin.Kotlin.StdLib.Common.1.5.30\build\monoandroid9.0\Xamarin.Kotlin.StdLib.Common.targets')" />
+  <Import Project="..\packages\Xamarin.Kotlin.StdLib.1.5.30\build\monoandroid9.0\Xamarin.Kotlin.StdLib.targets" Condition="Exists('..\packages\Xamarin.Kotlin.StdLib.1.5.30\build\monoandroid9.0\Xamarin.Kotlin.StdLib.targets')" />
 </Project>
