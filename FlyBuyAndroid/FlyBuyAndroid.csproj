@@ -19,16 +19,17 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>2.1.4.1</PackageVersion>
+    <PackageVersion>2.1.5</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
-    <Description>FlyBuy Pickup SDK for Xamarin/Android built for AndroidX</Description>
+    <Description>FlyBuy Pickup SDK 2.0 for Xamarin/Android</Description>
     <Copyright>Copyright (c) 2021 by Radius Networks</Copyright>
     <PackageIconUrl>https://www.radiusnetworks.com/wp-content/uploads/FlyBuyPickup_logo.svg</PackageIconUrl>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageLicenseUrl>https://github.com/RadiusNetworks/flybuy-android/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Radius Networks, Inc</Owners>
     <PackageProjectUrl>https://www.radiusnetworks.com/flybuy</PackageProjectUrl>
-    <PackageReleaseNotes>* Map module manager companion classes to Manager class</PackageReleaseNotes>
+    <PackageReleaseNotes>* Removes dependency on Timber from SDK
+</PackageReleaseNotes>
     <Title>FlyBuy 2.0 SDK</Title>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
