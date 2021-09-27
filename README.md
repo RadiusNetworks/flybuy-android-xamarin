@@ -6,7 +6,7 @@ The FlyBuy SDK is published on nuget.org at the following location: https://www.
 
 ### Add FlyBuySDK to your Xamarin.Android project
 
-Select `Packages` in your VS project and go to `Manage NuGet Packages...`. Search for `Radiusnetworks.Flybuy.IOS` and click `Add Package`. The latest SDK will be added to your project and can be referenced with the following:
+Select `Packages` in your VS project and go to `Manage NuGet Packages...`. Search for `Radiusnetworks.Flybuy.Android` and click `Add Package`. The latest SDK will be added to your project and can be referenced with the following:
 ```
 using Flybuy;
 using Flybuy.Data;
