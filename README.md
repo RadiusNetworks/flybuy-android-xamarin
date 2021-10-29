@@ -26,7 +26,7 @@ Flybuy needs to be setup and configured at application launch. However, it does 
 The easiest way to configure Flybuy in your app is to extend the `FlyBuyApplication` and call the `FlyBuyCore.configure(...)` method from `onCreate()` to setup the API token. Also, any modules that are used need to be configured. The example below shows all modules, but make sure to only configure the modules needed.
 
 ```csharp
-Application]
+[Application]
 public class MyApplication : FlyBuyApplication
 {
     public MyApplication(IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer) : base(javaReference, transfer)
