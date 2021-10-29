@@ -26,76 +26,75 @@ Flybuy needs to be setup and configured at application launch. However, it does 
 The easiest way to configure Flybuy in your app is to extend the `FlyBuyApplication` and call the `FlyBuyCore.configure(...)` method from `onCreate()` to setup the API token. Also, any modules that are used need to be configured. The example below shows all modules, but make sure to only configure the modules needed.
 
 ```csharp
-   [Application]
-    public class MyApplication : FlyBuyApplication
+Application]
+public class MyApplication : FlyBuyApplication
+{
+    public MyApplication(IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer) : base(javaReference, transfer)
     {
-        public MyApplication(IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer) : base(javaReference, transfer)
-        {
-        }
-
-        public override void OnCreate()
-        {
-            base.OnCreate();
-            Core.Configure(this, appToken);
-            ((FlyBuy.Pickup.PickupManager)FlyBuy.Pickup.PickupManager.Manager.GetInstance(null)).Configure(this);
-            ((FlyBuy.Presence.PresenceManager)FlyBuy.Presence.PresenceManager.Manager.GetInstance(null)).Configure(this);
-            ((FlyBuy.Notify.NotifyManager)FlyBuy.Notify.NotifyManager.Manager.GetInstance(null)).Configure(this);
-        }
     }
+
+    public override void OnCreate()
+    {
+        base.OnCreate();
+        Core.Configure(this, appToken);
+        ((FlyBuy.Pickup.PickupManager)FlyBuy.Pickup.PickupManager.Manager.GetInstance(null)).Configure(this);
+        ((FlyBuy.Presence.PresenceManager)FlyBuy.Presence.PresenceManager.Manager.GetInstance(null)).Configure(this);
+        ((FlyBuy.Notify.NotifyManager)FlyBuy.Notify.NotifyManager.Manager.GetInstance(null)).Configure(this);
+    }
+}
 ```
 
 The modules also provide methods for updating permissions. The following example handles location permission updates.
 
 ```csharp
+private const int FLYBUY_PERMISSIONS_REQUEST = 42;
 
-        private const int FLYBUY_PERMISSIONS_REQUEST = 42;
+private void RequestLocationPermissions() {
+    var permissions = CheckForMissingLocationPermissions();
+    if (permissions.Count > 0) {
+        ActivityCompat.RequestPermissions(this, permissions.ToArray(), FLYBUY_PERMISSIONS_REQUEST);
+    } else {
+        ((FlyBuy.Pickup.PickupManager)FlyBuy.Pickup.PickupManager.Manager.GetInstance(null)).OnLocationPermissionChanged();
+    }
+}
 
-        private void RequestLocationPermissions() {
-            var permissions = CheckForMissingLocationPermissions();
-            if (permissions.Count > 0) {
-                ActivityCompat.RequestPermissions(this, permissions.ToArray(), FLYBUY_PERMISSIONS_REQUEST);
-            } else {
-                ((FlyBuy.Pickup.PickupManager)FlyBuy.Pickup.PickupManager.Manager.GetInstance(null)).OnLocationPermissionChanged();
-            }
-        }
-
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
-        {
-            if(requestCode == FLYBUY_PERMISSIONS_REQUEST) {
-                ((FlyBuy.Pickup.PickupManager)FlyBuy.Pickup.PickupManager.Manager.GetInstance(null)).OnLocationPermissionChanged();
-            }
-        }
+public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+{
+    if(requestCode == FLYBUY_PERMISSIONS_REQUEST) {
+        ((FlyBuy.Pickup.PickupManager)FlyBuy.Pickup.PickupManager.Manager.GetInstance(null)).OnLocationPermissionChanged();
+    }
+}
 ```
 
 ## Components
 
-The following section provides some examples C# syntax for the customer and order components. Refer to the [https://www.radiusnetworks.com/developers/flybuy/#/sdk-2.0/customer](native documentation) for complete details on the SDK components.
+The following section provides some examples C# syntax for the customer and order components. Refer to the [native documentation](https://www.radiusnetworks.com/developers/flybuy/#/sdk-2.0/customer) for complete details on the SDK components.
 
 Use the following to determine if a customer is associated with the app:
 ```csharp
-        Customer currentCustomer = Core.customer.Current;
+Customer currentCustomer = Core.customer.Current;
 ```
 
 If no customer, then create the customer using:
 ```csharp
-        CustomerInfo customerInfo = new CustomerInfo(
-                "Marty McFly",
-                "DeLorean",
-                "Silver",
-                "OUTATIME",
-                "555-555-5555"
-        );
-        Core.customer.Create(customerInfo, true, true, null, null, createCustomerCallback);
+CustomerInfo customerInfo = new CustomerInfo(
+        "Marty McFly",
+        "DeLorean",
+        "Silver",
+        "OUTATIME",
+        "555-555-5555"
+);
+Core.customer.Create(customerInfo, true, true, null, null, createCustomerCallback);
 ```
 
 To claim an order use:
 ```csharp
-        Core.orders.Claim(redemptionCode, customerInfo, null, claimCallback);
+Core.orders.Claim(redemptionCode, customerInfo, null, claimCallback);
 ```
 
 To update an order use:
 ```csharp
-        Core.orders.UpdateCustomerState(currentOrder.Id, CustomerState.Completed, completeOrderCallback);
+Core.orders.UpdateCustomerState(currentOrder.Id, CustomerState.Completed, completeOrderCallback);
 ```
 
 ## Creating Android bindings library in Xamarin for FlyBuy
