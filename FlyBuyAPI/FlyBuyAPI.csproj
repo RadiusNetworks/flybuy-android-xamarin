@@ -14,7 +14,7 @@
     <RootNamespace>FlyBuyAPI</RootNamespace>
     <AssemblyName>FlyBuyAPI</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
   </PropertyGroup>
@@ -41,30 +41,22 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Square.OkIO">
-      <HintPath>..\packages\Square.OkIO.2.10.0\lib\monoandroid90\Square.OkIO.dll</HintPath>
+      <HintPath>..\packages\Square.OkIO.2.10.0.1\lib\monoandroid90\Square.OkIO.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkHttp3">
-      <HintPath>..\packages\Square.OkHttp3.4.9.1\lib\monoandroid90\Square.OkHttp3.dll</HintPath>
+      <HintPath>..\packages\Square.OkHttp3.4.9.3\lib\monoandroid90\Square.OkHttp3.dll</HintPath>
     </Reference>
     <Reference Include="Square.Retrofit2">
       <HintPath>..\packages\Square.Retrofit2.2.9.0\lib\monoandroid90\Square.Retrofit2.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Jetbrains.Annotations">
-      <HintPath>..\packages\Xamarin.Jetbrains.Annotations.13.0.0.4\lib\monoandroid90\Xamarin.Jetbrains.Annotations.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Kotlin.StdLib.Common">
-      <HintPath>..\packages\Xamarin.Kotlin.StdLib.Common.1.5.30\lib\monoandroid90\Xamarin.Kotlin.StdLib.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Kotlin.StdLib">
-      <HintPath>..\packages\Xamarin.Kotlin.StdLib.1.5.30\lib\monoandroid90\Xamarin.Kotlin.StdLib.dll</HintPath>
-    </Reference>
-    <Reference Include="GoogleGson">
-      <HintPath>..\packages\GoogleGson.2.8.6\lib\monoandroid90\GoogleGson.dll</HintPath>
     </Reference>
     <Reference Include="Square.Retrofit2.ConverterGson">
       <HintPath>..\packages\Square.Retrofit2.ConverterGson.2.9.0\lib\monoandroid90\Square.Retrofit2.ConverterGson.dll</HintPath>
     </Reference>
     <Reference Include="Java.Interop" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,6 +90,4 @@
   </Target>
   -->
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
-  <Import Project="..\packages\Xamarin.Kotlin.StdLib.Common.1.5.30\build\monoandroid9.0\Xamarin.Kotlin.StdLib.Common.targets" Condition="Exists('..\packages\Xamarin.Kotlin.StdLib.Common.1.5.30\build\monoandroid9.0\Xamarin.Kotlin.StdLib.Common.targets')" />
-  <Import Project="..\packages\Xamarin.Kotlin.StdLib.1.5.30\build\monoandroid9.0\Xamarin.Kotlin.StdLib.targets" Condition="Exists('..\packages\Xamarin.Kotlin.StdLib.1.5.30\build\monoandroid9.0\Xamarin.Kotlin.StdLib.targets')" />
 </Project>

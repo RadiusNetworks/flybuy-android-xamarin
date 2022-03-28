@@ -13,13 +13,12 @@
     <RootNamespace>FlyBuyAndroid</RootNamespace>
     <AssemblyName>FlyBuyAndroid</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>2.3.1</PackageVersion>
+    <PackageVersion>2.4.1</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
     <Description>FlyBuy Pickup SDK 2.0 for Xamarin/Android</Description>
     <Copyright>Copyright (c) 2021 by Radius Networks</Copyright>
@@ -29,14 +28,10 @@
     <Owners>Radius Networks, Inc</Owners>
     <PackageProjectUrl>https://www.radiusnetworks.com/flybuy</PackageProjectUrl>
     <PackageReleaseNotes>Enhancements:
- * Support for Notify Campaigns
- * Support for apps that target Android 12 (SDK31)
- * Adds support for manual spot entry
- * Adds partner_identifier_for_customer and partner_identifier_for_crew to order response
-
-Deprecations:
- * PickupManager.getInstance().onLocationPermissionChanged() replaced with PickupManager.getInstance().onPermissionChanged()</PackageReleaseNotes>
+ * Support for "Defer on Pickup" Notify campaigns.
+ * New Tableside module for customers using Flybuy Tableside.</PackageReleaseNotes>
     <Title>FlyBuy 2.0 SDK</Title>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -92,6 +87,12 @@ Deprecations:
     <ProjectReference Include="..\FlyBuyPresence\FlyBuyPresence.csproj">
       <Project>{76A0C43A-9058-4678-BD5F-62F9191EB283}</Project>
       <Name>FlyBuyPresence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlyBuyCommon\FlyBuyCommon.csproj">
+      <Name>FlyBuyCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlyBuyTableside\FlyBuyTableside.csproj">
+      <Name>FlyBuyTableside</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

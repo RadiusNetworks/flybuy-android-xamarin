@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}</ProjectGuid>
+    <ProjectGuid>{2F66F94E-7B5A-4140-9D00-0F6B06B995BB}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FlyBuyCore</RootNamespace>
-    <AssemblyName>FlyBuyCore</AssemblyName>
+    <RootNamespace>FlyBuyTableside</RootNamespace>
+    <AssemblyName>FlyBuyTableside</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
@@ -54,28 +54,18 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\core-release.aar" />
+    <ProjectReference Include="..\FlyBuyCommon\FlyBuyCommon.csproj">
+      <Name>FlyBuyCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\tableside-release.aar" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
       <Version>0.2.2</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Karamunting.KotlinX.Coroutines.Core">
-      <Version>1.4.2</Version>
-    </PackageReference>
-    <PackageReference Include="Karamunting.KotlinX.Coroutines.Core.Common">
-      <Version>1.3.8</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Android.JakeWharton.ThreeTenAbp">
-      <Version>1.3.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.AndroidX.Room.Runtime">
-      <Version>2.4.2</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.GooglePlayServices.Location">
-      <Version>118.0.0.3</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
