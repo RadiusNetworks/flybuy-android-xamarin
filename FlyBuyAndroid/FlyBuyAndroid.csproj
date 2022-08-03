@@ -13,30 +13,24 @@
     <RootNamespace>FlyBuyAndroid</RootNamespace>
     <AssemblyName>FlyBuyAndroid</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>2.3.1</PackageVersion>
+    <PackageVersion>2.5.3</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
-    <Description>FlyBuy Pickup SDK 2.0 for Xamarin/Android</Description>
+    <Description>FlyBuy Pickup SDK for Xamarin/Android built for Android 12</Description>
     <Copyright>Copyright (c) 2021 by Radius Networks</Copyright>
     <PackageIconUrl>https://www.radiusnetworks.com/wp-content/uploads/FlyBuyPickup_logo.svg</PackageIconUrl>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageLicenseUrl>https://github.com/RadiusNetworks/flybuy-android/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Radius Networks, Inc</Owners>
     <PackageProjectUrl>https://www.radiusnetworks.com/flybuy</PackageProjectUrl>
-    <PackageReleaseNotes>Enhancements:
- * Support for Notify Campaigns
- * Support for apps that target Android 12 (SDK31)
- * Adds support for manual spot entry
- * Adds partner_identifier_for_customer and partner_identifier_for_crew to order response
-
-Deprecations:
- * PickupManager.getInstance().onLocationPermissionChanged() replaced with PickupManager.getInstance().onPermissionChanged()</PackageReleaseNotes>
+    <PackageReleaseNotes>* Map module manager companion classes to Manager class</PackageReleaseNotes>
     <Title>FlyBuy 2.0 SDK</Title>
+    <ReleaseVersion>2.5.3</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -73,10 +67,6 @@ Deprecations:
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FlyBuyAPI\FlyBuyAPI.csproj">
-      <Project>{793473AE-33D9-4A22-816E-773676A69799}</Project>
-      <Name>FlyBuyAPI</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FlyBuyCore\FlyBuyCore.csproj">
       <Project>{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}</Project>
       <Name>FlyBuyCore</Name>
@@ -92,6 +82,9 @@ Deprecations:
     <ProjectReference Include="..\FlyBuyPresence\FlyBuyPresence.csproj">
       <Project>{76A0C43A-9058-4678-BD5F-62F9191EB283}</Project>
       <Name>FlyBuyPresence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlyBuyCommon\FlyBuyCommon.csproj">
+      <Name>FlyBuyCommon</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

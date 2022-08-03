@@ -6,14 +6,19 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']/class[@name='Site']/field[@name='Companion']" />
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']/class[@name='Order']/field[@name='Companion']" />
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.manager']/class[@name='SitesManager']/field[@name='Companion']" />
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.wrongsitearrival']/class[@name='WrongSiteArrivalConfig']/field[@name='Companion']" />
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.util']/class[@name='MonthDayDateFormatter']/field[@name='Companion']" />
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.beacons']/class[@name='Beacon']/field[@name='Companion']" />
+
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']" name="managedName">FlyBuy</attr>
 
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.customer']" name="managedName">FlyBuy.Data</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.order']" name="managedName">FlyBuy.Data</attr>
-    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.site']" name="managedName">FlyBuy.Data</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.beacons']" name="managedName">FlyBuy.Data</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.error']" name="managedName">FlyBuy.Data</attr>
-    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.common']" name="managedName">FlyBuy.Data</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']" name="managedName">FlyBuy.Data</attr>
 
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']" name="managedName">Core</attr>
@@ -23,6 +28,4 @@
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='config']" name="managedName">config</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']/class[@name='OrderAndBeaconRegions']/field[@name='order']" name="managedName">order</attr>
 
-    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.beacons']/class[@name='Beacon']/field[@name='Companion']" name="managedName">BeaconObj</attr>
-    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.error']/class[@name='CoreError']/field[@name='Companion']" name="managedName">Error</attr>
 </metadata>

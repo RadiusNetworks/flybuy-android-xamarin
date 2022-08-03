@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<metadata>
-    <!--
+﻿<metadata>
+  <!--
   This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
   
@@ -10,6 +9,7 @@
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.api.network.common']/class[@name='ApiErrorResponse']/field[@name='errorMessages']" />
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.api.network.common']/class[@name='ApiResponse']/field[@name='Companion']" />
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.api.network.common']/class[@name='ApiSuccessResponse']/field[@name='Companion']" />
+
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.api.model']/class[@name='Order']/constructor[@name='Order']" />
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.api.model']/class[@name='Order']/method[@name='copy']" />
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.api.model']/class[@name='Site']/constructor[@name='Site']" />

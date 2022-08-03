@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}</ProjectGuid>
+    <ProjectGuid>{65434C8A-BE09-4790-82F4-350E53512AB3}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FlyBuyCore</RootNamespace>
-    <AssemblyName>FlyBuyCore</AssemblyName>
+    <RootNamespace>FlyBuyCommon</RootNamespace>
+    <AssemblyName>FlyBuyCommon</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
     <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
@@ -36,10 +36,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
-    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -60,37 +56,23 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\core-release.aar" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
       <Version>0.2.2</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Xamarin.AndroidX.Room.Runtime">
-      <Version>2.4.2.2</Version>
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>1.7.10</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.GooglePlayServices.Location">
-      <Version>119.0.1.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Android.JakeWharton.ThreeTenAbp">
-      <Version>1.3.1</Version>
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Common">
+      <Version>1.7.10</Version>
     </PackageReference>
     <PackageReference Include="Karamunting.KotlinX.Coroutines.Core.Common">
       <Version>1.3.8</Version>
     </PackageReference>
-    <PackageReference Include="Karamunting.KotlinX.Coroutines.Core">
-      <Version>1.4.2</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FlyBuyCommon\FlyBuyCommon.csproj">
-      <Name>FlyBuyCommon</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FlyBuyAPI\FlyBuyAPI.csproj">
-      <Name>FlyBuyAPI</Name>
-    </ProjectReference>
+    <LibraryProjectZip Include="Jars\common-release.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
