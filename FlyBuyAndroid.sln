@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyPresence", "FlyBuyPre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyNotify", "FlyBuyNotify\FlyBuyNotify.csproj", "{5D2C6484-59DB-47D0-9182-5E2880E23407}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyCommon", "FlyBuyCommon\FlyBuyCommon.csproj", "{65434C8A-BE09-4790-82F4-350E53512AB3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyAPI", "FlyBuyAPI\FlyBuyAPI.csproj", "{511EBB36-FB17-4851-A2DC-D8CBC7AAFEF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBuyCommon", "FlyBuyCommon\FlyBuyCommon.csproj", "{97ED351B-E117-4AD5-BD20-AD903F164E77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,14 +53,14 @@ Global
 		{5D2C6484-59DB-47D0-9182-5E2880E23407}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D2C6484-59DB-47D0-9182-5E2880E23407}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D2C6484-59DB-47D0-9182-5E2880E23407}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65434C8A-BE09-4790-82F4-350E53512AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65434C8A-BE09-4790-82F4-350E53512AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65434C8A-BE09-4790-82F4-350E53512AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65434C8A-BE09-4790-82F4-350E53512AB3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{511EBB36-FB17-4851-A2DC-D8CBC7AAFEF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{511EBB36-FB17-4851-A2DC-D8CBC7AAFEF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{511EBB36-FB17-4851-A2DC-D8CBC7AAFEF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{511EBB36-FB17-4851-A2DC-D8CBC7AAFEF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97ED351B-E117-4AD5-BD20-AD903F164E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97ED351B-E117-4AD5-BD20-AD903F164E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97ED351B-E117-4AD5-BD20-AD903F164E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97ED351B-E117-4AD5-BD20-AD903F164E77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		version = 2.5.3

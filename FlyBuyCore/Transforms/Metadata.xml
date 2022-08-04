@@ -26,6 +26,6 @@
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='orders']" name="managedName">orders</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='sites']" name="managedName">sites</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='config']" name="managedName">config</attr>
-    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']/class[@name='OrderAndBeaconRegions']/field[@name='order']" name="managedName">order</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']/class[@name='OrderAndBeaconRegions']/field[@name='order']" name="managedName">Order</attr>
 
 </metadata>

@@ -19,7 +19,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>2.5.3</PackageVersion>
+    <PackageVersion>2.5.3.0</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
     <Description>FlyBuy Pickup SDK for Xamarin/Android built for Android 12</Description>
     <Copyright>Copyright (c) 2021 by Radius Networks</Copyright>
@@ -50,9 +50,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mono.Android" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +82,9 @@
     <ProjectReference Include="..\FlyBuyPresence\FlyBuyPresence.csproj">
       <Project>{76A0C43A-9058-4678-BD5F-62F9191EB283}</Project>
       <Name>FlyBuyPresence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlyBuyAPI\FlyBuyAPI.csproj">
+      <Name>FlyBuyAPI</Name>
     </ProjectReference>
     <ProjectReference Include="..\FlyBuyCommon\FlyBuyCommon.csproj">
       <Name>FlyBuyCommon</Name>

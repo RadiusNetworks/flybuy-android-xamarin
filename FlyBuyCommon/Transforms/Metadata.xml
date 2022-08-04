@@ -10,4 +10,5 @@
 
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.common']" name="managedName">FlyBuy.Data</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.error']" name="managedName">FlyBuy.Data</attr>
+
 </metadata>
