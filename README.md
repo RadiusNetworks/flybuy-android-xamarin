@@ -23,7 +23,7 @@ The Andorid SDK is broken up into 3 modules:
 
 Flybuy needs to be setup and configured at application launch. However, it does not run in the background or use device resources until there is an active order.
 
-The easiest way to configure Flybuy in your app is to extend the `FlyBuyApplication` and call the `FlyBuyCore.configure(...)` method from `onCreate()` to setup the API token. Also, any modules that are used need to be configured. The example below shows all modules, but make sure to only configure the modules needed.
+The easiest way to configure Flybuy in your app is to extend the `FlyBuyApplication` and call the `FlyBuyCore.configure(...)` method from `onCreate()` to setup the auth token. Also, any modules that are used need to be configured. The example below shows all modules, but make sure to only configure the modules needed.
 
 ```csharp
 [Application]

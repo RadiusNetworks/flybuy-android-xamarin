@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5D2C6484-59DB-47D0-9182-5E2880E23407}</ProjectGuid>
+    <ProjectGuid>{97ED351B-E117-4AD5-BD20-AD903F164E77}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FlyBuyNotify</RootNamespace>
-    <AssemblyName>FlyBuyNotify</AssemblyName>
+    <RootNamespace>FlyBuyCommon</RootNamespace>
+    <AssemblyName>FlyBuyCommon</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
     <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
@@ -55,31 +55,19 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FlyBuyCore\FlyBuyCore.csproj">
-      <Project>{AD46EB75-D5D7-4257-BAEA-B5FC2789FE3F}</Project>
-      <Name>FlyBuyCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FlyBuyAPI\FlyBuyAPI.csproj">
-      <Name>FlyBuyAPI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FlyBuyCommon\FlyBuyCommon.csproj">
-      <Name>FlyBuyCommon</Name>
-    </ProjectReference>
+    <LibraryProjectZip Include="Jars\common-release.aar" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\notify-release.aar" />
-  </ItemGroup>
-  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Xamarin.Kotlin.StdLib">
       <Version>1.7.10</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Kotlin.StdLib.Common">
       <Version>1.7.10</Version>
-    </PackageReference>
-    <PackageReference Include="NuGet.Build.Packaging">
-      <Version>0.2.2</Version>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
