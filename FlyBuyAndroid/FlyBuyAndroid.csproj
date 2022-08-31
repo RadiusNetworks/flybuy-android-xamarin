@@ -19,7 +19,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Radiusnetworks.Flybuy.Android</PackageId>
-    <PackageVersion>2.5.3.0</PackageVersion>
+    <PackageVersion>2.6.0.0</PackageVersion>
     <Authors>Radius Networks, Inc</Authors>
     <Description>FlyBuy Pickup SDK for Xamarin/Android built for Android 12</Description>
     <Copyright>Copyright (c) 2021 by Radius Networks</Copyright>
@@ -30,7 +30,7 @@
     <PackageProjectUrl>https://www.radiusnetworks.com/flybuy</PackageProjectUrl>
     <PackageReleaseNotes>* Map module manager companion classes to Manager class</PackageReleaseNotes>
     <Title>FlyBuy 2.0 SDK</Title>
-    <ReleaseVersion>2.5.3</ReleaseVersion>
+    <ReleaseVersion>2.6.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
