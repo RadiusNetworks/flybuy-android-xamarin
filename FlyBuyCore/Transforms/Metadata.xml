@@ -15,6 +15,9 @@
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.util']/class[@name='MonthDayDateFormatter']/field[@name='Companion']" />
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.beacons']/class[@name='Beacon']/field[@name='Companion']" />
 
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.pickup_config']/class[@name='PickupConfig']/field[@name='Companion']" />
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='locationRequestManager']" />
+
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']" name="managedName">FlyBuy</attr>
 
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.customer']" name="managedName">FlyBuy.Data</attr>
@@ -29,5 +32,4 @@
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='sites']" name="managedName">sites</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='config']" name="managedName">config</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']/class[@name='OrderAndBeaconRegions']/field[@name='order']" name="managedName">Order</attr>
-
 </metadata>
