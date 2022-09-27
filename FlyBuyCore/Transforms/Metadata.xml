@@ -14,6 +14,8 @@
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.wrongsitearrival']/class[@name='WrongSiteArrivalConfig']/field[@name='WORST_ACCURACY_LIMIT']" />
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.util']/class[@name='MonthDayDateFormatter']/field[@name='Companion']" />
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.beacons']/class[@name='Beacon']/field[@name='Companion']" />
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.notify']/class[@name='NotifyConfig']/field[@name='Companion']" />
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.push']/class[@name='FlybuyPushData']/field[@name='Companion']" />
 
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.pickup_config']/class[@name='PickupConfig']/field[@name='Companion']" />
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='locationRequestManager']" />
@@ -23,6 +25,7 @@
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.customer']" name="managedName">FlyBuy.Data</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.order']" name="managedName">FlyBuy.Data</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.beacons']" name="managedName">FlyBuy.Data</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.pickup_config']" name="managedName">FlyBuy.Data</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.error']" name="managedName">FlyBuy.Data</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']" name="managedName">FlyBuy.Data</attr>
 
