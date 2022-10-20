@@ -64,10 +64,10 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Xamarin.Kotlin.StdLib">
-      <Version>1.7.10</Version>
+      <Version>1.7.20</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Kotlin.StdLib.Common">
-      <Version>1.7.10</Version>
+      <Version>1.7.20</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
