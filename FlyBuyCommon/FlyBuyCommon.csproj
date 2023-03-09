@@ -14,7 +14,7 @@
     <AssemblyName>FlyBuyCommon</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
-    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
@@ -64,10 +64,10 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Xamarin.Kotlin.StdLib">
-      <Version>1.7.20</Version>
+      <Version>1.8.10</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Kotlin.StdLib.Common">
-      <Version>1.7.20</Version>
+      <Version>1.8.10</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
