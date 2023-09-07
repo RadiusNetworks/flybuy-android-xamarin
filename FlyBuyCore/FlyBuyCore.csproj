@@ -18,7 +18,7 @@
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <ReleaseVersion>2.5.3</ReleaseVersion>
+    <ReleaseVersion>2.9.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,10 +71,10 @@
       <Version>1.3.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.Work.Work.Runtime.Ktx">
-      <Version>2.7.1.5</Version>
+      <Version>2.8.1.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
-      <Version>2.5.1.1</Version>
+      <Version>2.6.1.3</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
