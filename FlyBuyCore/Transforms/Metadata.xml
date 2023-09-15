@@ -35,4 +35,16 @@
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='sites']" name="managedName">sites</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='config']" name="managedName">config</attr>
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.room.domain']/class[@name='OrderAndBeaconRegions']/field[@name='order']" name="managedName">Order</attr>
+
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='configOptions']" name="managedName">configOptions</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='appInstanceManager']" name="managedName">appInstanceManager</attr>
+
+    <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/method[@name='configure']" />
+    <add-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']" >
+        <method name="configure" return="void" abstract="false" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public">
+            <parameter name="p0" type="Android.App.Application" />
+            <parameter name="p1" type="FlyBuy.ConfigOptions" />
+        </method>
+    </add-node>
+
 </metadata>
