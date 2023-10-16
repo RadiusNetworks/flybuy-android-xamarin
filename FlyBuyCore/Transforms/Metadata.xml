@@ -20,6 +20,10 @@
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.pickup_config']/class[@name='PickupConfig']/field[@name='Companion']" />
     <remove-node path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='locationRequestManager']" />
 
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='configOptions']" name="managedName">configOptions</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='crashManager']" name="managedName">crashManager</attr>
+    <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']/class[@name='FlyBuyCore']/field[@name='appInstanceManager']" name="managedName">appInstanceManager</attr>
+
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk']" name="managedName">FlyBuy</attr>
 
     <attr path="/api/package[@name='com.radiusnetworks.flybuy.sdk.data.customer']" name="managedName">FlyBuy.Data</attr>
